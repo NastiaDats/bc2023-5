@@ -46,11 +46,23 @@
 		},
 		{
 			"name": "http://localhost:8000/upload",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"note_name\": \"Notes\",\r\n  \"note\": \"my notes\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8000/notes/Нотатка",
+					"raw": "http://localhost:8000/notes/Notes",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -58,7 +70,7 @@
 					"port": "8000",
 					"path": [
 						"notes",
-						"Нотатка"
+						"Notes"
 					]
 				}
 			},
@@ -89,7 +101,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/notes/Нотатка",
+					"raw": "http://localhost:8000/notes/Notes",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -97,7 +109,7 @@
 					"port": "8000",
 					"path": [
 						"notes",
-						"Нотатка"
+						"Notes"
 					]
 				}
 			},
@@ -109,7 +121,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/notes/Нотатка",
+					"raw": "http://localhost:8000/notes/Notes",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -117,7 +129,7 @@
 					"port": "8000",
 					"path": [
 						"notes",
-						"Нотатка"
+						"Notes"
 					]
 				}
 			},
