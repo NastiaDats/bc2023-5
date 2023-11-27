@@ -8,18 +8,30 @@
 	"item": [
 		{
 			"name": "http://localhost:8000/notes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8000/UploadForm.html",
+					"raw": "http://localhost:8000/notes",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"UploadForm.html"
+						"notes"
 					]
 				}
 			},
@@ -109,6 +121,15 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"note_name\": \"Notes\",\r\n  \"note\": \"MY NOTES1 \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:8000/notes/Notes",
 					"protocol": "http",
